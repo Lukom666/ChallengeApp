@@ -19,11 +19,11 @@ else if (age == 33)
 {
     if (sex == "man")
     {
-        Console.WriteLine("Łukasz, mężczyzna lat 33 lat");
+        Console.WriteLine("Łukasz, mężczyzna lat 33");
     }
     else
     {
-        Console.WriteLine("kobieta lat 33 lat");
+        Console.WriteLine("kobieta lat 33");
     }
 }
 else if (age < 18)
