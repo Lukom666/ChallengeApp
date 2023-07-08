@@ -1,4 +1,4 @@
-﻿// zadanie domowe dzień 4
+﻿// zadanie dzień 4
 var name = "Łukasz";
 var sex = "man";
 var age = 33;
