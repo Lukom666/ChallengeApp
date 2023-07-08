@@ -1,14 +1,14 @@
 ﻿// zadanie dzień 4
 var name = "Łukasz";
-var sex = "man";
 var age = 33;
+bool isMale = true;
 
 
-if (name == "Łukasz" && age < 30 && age > 18)
+if (age < 30 && age > 18)
 {
-    if (sex == "man")
+    if (isMale)
     {
-        Console.WriteLine("Łukasz, mężczyzna poniżej 30 lat");
+        Console.WriteLine($"{name}, mężczyzna poniżej 30 lat");
     }
     else
     {
@@ -17,18 +17,18 @@ if (name == "Łukasz" && age < 30 && age > 18)
 }
 else if (age == 33)
 {
-    if (sex == "man")
+    if (isMale)
     {
-        Console.WriteLine("Łukasz, mężczyzna lat 33");
+        Console.WriteLine($"{name}, mężczyzna lat 33");
     }
     else
     {
-        Console.WriteLine("kobieta lat 33");
+        Console.WriteLine($"kobieta lat 33");
     }
 }
 else if (age < 18)
 {
-    if (sex == "man")
+    if (isMale)
     {
         Console.WriteLine("Niepełnoletni mężczyzna");
     }
@@ -39,12 +39,12 @@ else if (age < 18)
 }
 else if (age > 30)
 {
-    if (sex == "man")
+    if (isMale)
     {
-        Console.WriteLine("Łukasz, doświadczony mężczyzna");
+        Console.WriteLine($"{name}, doświadczony mężczyzna");
     }
     else
-    { 
+    {
         Console.WriteLine("Doświadczona kobieta");
     }
 }
