@@ -39,5 +39,5 @@ foreach (var employee in employees)
         maxResult = employee.Result;
     }
 }
-    Console.WriteLine("The best result have " + employeeWithMaxResult.Name + " " + employeeWithMaxResult.Surname +
-        ", age " + employeeWithMaxResult.Age + ", points " + maxResult + ", Congratulations!");
+Console.WriteLine("The best result have " + employeeWithMaxResult.Name + " " + employeeWithMaxResult.Surname +
+    ", age " + employeeWithMaxResult.Age + ", points " + maxResult + ", Congratulations!");
