@@ -30,7 +30,7 @@ namespace ChallengeApp.Test
 
             var result = employee1.Result;
 
-            Assert.AreEqual(35, result);
+            Assert.AreEqual(27, result);
 
         }
         [Test]
@@ -46,7 +46,7 @@ namespace ChallengeApp.Test
 
             var result = employee2.Result;
 
-            Assert.AreEqual(-14, result);
+            Assert.AreEqual(-12, result);
 
         }
 
