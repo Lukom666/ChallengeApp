@@ -3,24 +3,66 @@ using System.Reflection.Metadata;
 namespace ChallengeApp.Test
 {
 
-    public class Tests
+    public class EmployeeTests
     {
         [Test]
-        public void Test1()
+        public void WhenGetStatisticsCalled_ShouldReturnCorrectMax()
         {
 
             // arrange
-            int age1 = 10;
-            int age2 = 3;
+            var employee = new Employee("Josh", "Gods");
+            employee.AddGrade(2);
+            employee.AddGrade(2);
+            employee.AddGrade(6);
 
 
             // act
-            int result = age1 + age2;
+            var statistics = employee.GetStatistics();
 
             // assert
-            Assert.AreEqual(13, result);
+            Assert.AreEqual(6, statistics.Max);
 
         }
 
+
+
+
+        [Test]
+        public void WhenGetStatisticsCalled_ShouldReturnCorrectMin()
+        {
+
+            // arrange
+            var employee = new Employee("Josh", "Gods");
+            employee.AddGrade(2);
+            employee.AddGrade(2);
+            employee.AddGrade(6);
+
+
+            // act
+            var statistics = employee.GetStatistics();
+
+            // assert
+            Assert.AreEqual(2, statistics.Min);
+
+        }
+
+
+        [Test]
+        public void WhenGetStatisticsCalled_ShouldReturnCorrectAverage()
+        {
+
+            // arrange
+            var employee = new Employee("Josh", "Gods");
+            employee.AddGrade(2);
+            employee.AddGrade(2);
+            employee.AddGrade(6);
+
+
+            // act
+            var statistics = employee.GetStatistics();
+
+            // assert
+            Assert.AreEqual(Math.Round(3.33, 2), Math.Round(statistics.Average, 2));
+        }
     }
 }

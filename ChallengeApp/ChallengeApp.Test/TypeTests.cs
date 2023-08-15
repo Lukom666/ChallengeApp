@@ -20,7 +20,7 @@ namespace ChallengeApp.Test
             Assert.AreNotEqual(number3, number4);
         }
         [Test]
-        public void CheckingifStringNameAreEqual()
+        public void CheckingIfStringNameAreEqual()
         {
             string name0 = ("Lukas");
             string name1 = ("Lukas");
@@ -37,7 +37,7 @@ namespace ChallengeApp.Test
         }
         private Employee GetEmployee(string name)
         {
-            return new Employee(name, name, name);
+            return new Employee(name, name);
         }
     }
 }
